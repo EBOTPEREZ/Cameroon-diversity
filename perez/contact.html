@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Styles for the form container */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: relative; /* Add position relative */
+        }
+
+        /* Styles for the image */
+        .contact-img {
+            position: absolute;
+            top: 2px; /* Adjust top position */
+            left: 10px; /* Adjust left position */
+            width: 450px; /* Adjust image width */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 1; /* Ensure the image is above the form */
+        }
+
+        /* Styles for form input fields */
+        input[type="text"], textarea {
+            width: calc(100% - 20px); /* Adjust input width */
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style for submit button */
+        input[type="submit"] {
+            width: calc(100% - 20px); /* Adjust button width */
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Style for submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+   <center> <nav>
+               <ul>
+                   <button> <li><a href="home.html">Home</a></li></button>
+                  <button>  <li><a href="about.html">About</a></li></button>
+                  <button>  <li><a href="bloq.html">bloq</a></li></button>
+                  
+                  <button>  <li><a href="sign.html">sing</a></li></button>
+                </ul>
+            </nav></center>
+
+<div class="container">
+   
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+     
+
+</div>
+
+</body>
+<img src="C:/Users/Käyttäjä/Desktop/perez/img/me22.jpg" class="contact-img" alt="Me" />
+
+</html>
